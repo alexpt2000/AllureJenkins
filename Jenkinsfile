@@ -6,7 +6,7 @@ timestamps {
 	
         stage ('Setup virtualenv') {
             sh """
-            PATH=$WORKSPACE/venv/bin:/usr/local/bin:$PATH
+            PATH=$WORKSPACE/venv/bin:/anaconda3/bin:$PATH
             if [ ! -d "venv" ]; then
                     python3 -m virtualenv venv
             fi
