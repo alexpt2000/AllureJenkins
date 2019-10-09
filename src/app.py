@@ -1,8 +1,6 @@
 """
 This is simple hello world module
 """
-
-
 def main():
     print("Hello World")
 
