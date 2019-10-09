@@ -3,6 +3,7 @@ import nose
 
 @nose.allure.step('make_some_data_foo')
 def test_foo():
+    nose.allure.environment(report='Allure report', browser=u'Firefox')
     assert (True == True)
 
 
