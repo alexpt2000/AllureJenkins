@@ -5,4 +5,4 @@ def test_foo():
         assert(True == True)
 
     with nose.allure.step('step two'):
-        assert(True == True)
+        assert(False == False)
