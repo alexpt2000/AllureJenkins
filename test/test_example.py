@@ -1,15 +1,15 @@
 import nose
 
-def test_foo():
-    with nose.allure.step('step one'):
-        assert(True == True)
 
-    with nose.allure.step('step two'):
-        assert(False == True)
+@nose.allure.step('make_some_data_foo')
+def test_foo():
+    assert (True == True)
+
 
 def test_Othe():
-    with nose.allure.step('step one'):
-        assert(True == True)
+    nose.allure.attach('my attach', 'Hello, World')
+    with nose.allure.step('step two'):
+        assert (True == True)
 
     with nose.allure.step('step two'):
-        assert(False == False)
+        assert (False == False)
